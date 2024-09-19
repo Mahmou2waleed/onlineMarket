@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlineMarket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;
+   0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/preview.css" />
+  <link rel="stylesheet" href="styles/top-selling.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+</head>
+<body>
+  <header id="header">
+    <div id="left-section">
+      <img id="nassan-logo" src="picture/logo-no-background.png" />
+    </div>
+
+    <div id="middle-section">
+      <div id="home">
+        <a id="active" href="OnlineMarket.html">Home</a>
+      </div>
+      <div id="Categories">
+        <a href="#button-container">Categories</a>
+      </div>
+      <div id="Contact">
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div id="right-section">
+      <div id="search-section">
+        <div id="search">Search</div>
+        <img id="search-icon" src="picture/search.svg" />
+      </div>
+      <div id="cart-section" onclick="document.location='cart.html'">
+        <div id="cart">Cart</div>
+        <img id="cart-icon" src="picture/shopping-cart-svgrepo-com.svg" />
+      </div>
+      <button id="signIn-button" onclick="document.location='sign-in.html'">Sign in</button>
+    </div>
+  </header>
+
+  <section id="banner">
+    <div id="container">
+      <div id="slide-wrapper">
+        <div id="slider">
+          <img id="slide-1" src="picture/premium_photo-1664305032567-2c460e29dec1.jfif" />
+          <img id="slide-2" src="picture/photo-1629299342303-3f3622666c41.jfif" />
+          <img id="slide-3" src="picture/premium_photo-1684623605166-1a7f751d20fa.jfif" />
+        </div>
+        <div id="slider-nav">
+          <a href="#silde-1"></a>
+          <a href="#silde-2"></a>
+          <a href="#silde-3"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="button-container">
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/2203/2203183.png" />
+        <div>Supermarket</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/3275/3275391.png" alt="Icon" />
+        <div>Fashion</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/1702/1702280.png" alt="Icon" />
+        <div>Baby Products</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/4715/4715099.png" alt="Icon" />
+        <div>Phones & Tablets</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/2603/2603741.png" alt="Icon" />
+        <div>Home & Furniture</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/3362/3362661.png" alt="Icon" />
+        <div>Appliances</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/1773/1773735.png" alt="Icon" />
+        <div>Televisions & Audio</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/502/502128.png" alt="Icon" />
+        <div>Sporting Goods</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/2460/2460229.png" alt="Icon" />
+        <div>Computing</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/2780/2780137.png" alt="Icon" />
+        <div>Gaming</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/2553/2553682.png" alt="Icon" />
+        <div>Health & Beauty</div>
+      </button>
+      <button class="banner-button" onclick="document.location='products-page.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/16645/16645594.png" alt="Icon" />
+        <div>Other categories</div>
+      </button>
+    </div>
+  </section>
+
+  <div id="top-selling-grid">
+    <div id="name-bar">
+      <div>Top selling items</div>
+      <div id="see-all">SEE ALL</div>
+    </div>
+    <div id="products">
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/03/330623/1.jpg?1723" alt="Darol Multipurpose Liquid Disinfectant">
+        <div class="discount">-20%</div>
+        <div class="product-info">
+          <p class="product-details">Darol Multipurpose Liquid Disinfectant</p>
+          <p class="product-price">EGP 39.00</p>
+          <p class="product-price-before">EGP 49.00</p>
+        </div>
+      </div>
+      <div class="product" onclick="window.location.href= 'product-detail.html'">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/20/690418/1.jpg?8931" alt="BLACK+DECKER Air Fryer">
+        <div class="discount">-51%</div>
+        <div class="product-info">
+          <p class="product-details">BLACK+DECKER Air Fryer - 4 Liter -1.2Kg Performance Range Aerofry- Af300</p>
+          <p class="product-price">EGP 4199.00</p>
+          <p class="product-price-before">EGP 8500.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/58/513084/1.jpg?6260" alt="XIAOMI Redmi 12">
+        <div class="discount">-31%</div>
+        <div class="product-info">
+          <p class="product-details">XIAOMI Redmi 12 - 6.79-Inch 12</p>
+          <p class="product-price">EGP 6899.00</p>
+          <p class="product-price-before">EGP 9999.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/389096/1.jpg?6458" alt="Beko BIHT1241+BIHT1240">
+        <div class="discount">-35%</div>
+        <div class="product-info">
+          <p class="product-details">Beko BIHT1241+BIHT1240 - 1</p>
+          <p class="product-price">EGP 29999.00</p>
+          <p class="product-price-before">EGP 45999.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/120903/1.jpg?9800" alt="Zanussi (DF40) 370L Crespo">
+        <div class="discount">-12%</div>
+        <div class="product-info">
+          <p class="product-details">Zanussi (DF40) 370L Crespo - Freezer</p>
+          <p class="product-price">EGP 22695.50</p>
+          <p class="product-price-before">EGP 25799.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/196625/1.jpg?4577" alt="ADIDAS RF082   Motion Linear Backpack- Black">
+        <div class="discount">-53%</div>
+        <div class="product-info">
+          <p class="product-details">ADIDAS RF082   Motion Linear Backpack- Black</p>
+          <p class="product-price">EGP 995.00</p>
+          <p class="product-price-before">EGP 2099.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/107952/1.jpg?0005" alt="Fresh Shabah Wall Fan With Remote - 18 Inch">
+        <div class="discount">-13%</div>
+        <div class="product-info">
+          <p class="product-details">Fresh Shabah Wall Fan With Remote - 18 Inch</p>
+          <p class="product-price">EGP 1733.00</p>
+          <p class="product-price-before">EGP 1990.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+      <div class="footer-section0">
+        <h3>About Us</h3>
+        <p>Information about the company.</p>
+      </div>
+      <div class="footer-section1">
+        <h3>Contact</h3>
+        <p>Email: contact@onlinemarket.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+      <div class="footer-section2">
+        <h3>Follow Us</h3>
+        <p>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </p>
+      </div>
+  </footer>
+
+  <script src="scripts/moving-slides.js"></script>
+</body>
+</html>

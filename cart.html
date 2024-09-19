@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - OnlineMarket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/cart.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+</head>
+<body>
+  <header id="header">
+    <div id="left-section">
+      <img id="nassan-logo" src="picture/logo-no-background.png" />
+    </div>
+
+    <div id="middle-section">
+      <div id="home"><a href="OnlineMarket.html">Home</a></div>
+      <div id="Categories"><a href="#button-container">Categories</a></div>
+      <div id="Contact"><a href="#contact">Contact</a></div>
+    </div>
+
+    <div id="right-section">
+      <div id="search-section">
+        <div id="search">Search</div>
+        <img id="search-icon" src="picture/search.svg" />
+      </div>
+      <div id="cart-section" onclick="document.location='cart.html'">
+        <div id="cart">Cart</div>
+        <img id="cart-icon" src="picture/shopping-cart-svgrepo-com.svg" />
+      </div>
+      <button id="signIn-button" onclick="document.location='sign-in.html'">Sign in</button>
+    </div>
+  </header>
+
+  <div class="cart-container">
+    <h1>Your Cart</h1>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/03/330623/1.jpg?1723" alt="Darol Multipurpose Liquid Disinfectant">
+        <div class="cart-item-info">
+          <p>Darol Multipurpose Liquid Disinfectant</p>
+          <p>Price: EGP 39.00</p>
+          <label for="quantity">Quantity: </label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </div>
+        <div class="cart-item-remove">
+          <button>Remove</button>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/20/690418/1.jpg?8931" alt="BLACK+DECKER Air Fryer">
+        <div class="cart-item-info">
+          <p>BLACK+DECKER Air Fryer</p>
+          <p>Price: EGP 4199.00</p>
+          <label for="quantity">Quantity: </label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </div>
+        <div class="cart-item-remove">
+          <button>Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <p>Total: EGP </p>
+      <button id="checkout-button">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-section0">
+      <h3>About Us</h3>
+      <p>Information about the company.</p>
+    </div>
+    <div class="footer-section1">
+      <h3>Contact</h3>
+      <p>Email: contact@onlinemarket.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+    <div class="footer-section2">
+      <h3>Follow Us</h3>
+      <p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts/cart.js"></script>
+</body>
+</html>

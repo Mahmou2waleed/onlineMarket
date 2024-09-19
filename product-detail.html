@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlineMarket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;
+   0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/product-detail.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/top-selling.css" />
+</head>
+<body>
+  <header id="header">
+    <div id="left-section">
+      <img id="nassan-logo" src="picture/logo-no-background.png" />
+    </div>
+
+    <div id="middle-section">
+      <div id="home">
+        <a href="OnlineMarket.html">Home</a>
+      </div>
+      <div id="Categories">
+        <a href="#button-container">Categories</a>
+      </div>
+      <div id="Contact">
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div id="right-section">
+      <div id="search-section">
+        <div id="search">Search</div>
+        <img id="search-icon" src="picture/search.svg" />
+      </div>
+      <div id="cart-section" onclick="document.location='cart.html'">
+        <div id="cart">Cart</div>
+        <img id="cart-icon" src="picture/shopping-cart-svgrepo-com.svg" />
+      </div>
+      <button id="signIn-button" onclick="document.location='sign-in.html'">Sign in</button>
+    </div>
+  </header>
+
+  <div id="product-container">
+    <div id="prodetails">
+      <div class="singel-pro-image">
+        <img src="https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/20/690418/1.jpg?8931" width="100%" id="mainImg" />
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img src="https://eg.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/20/690418/1.jpg?8931" width="100%" class="samll-img" />
+          </div>
+          <div class="small-img-col">
+            <img src="https://eg.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/20/690418/2.jpg?8931" width="100%" class="samll-img" />
+          </div>
+          <div class="small-img-col">
+            <img src="https://eg.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/20/690418/3.jpg?8931" width="100%" class="samll-img" />
+          </div>
+          <div class="small-img-col">
+            <img src="https://eg.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/20/690418/4.jpg?8931" width="100%" class="samll-img" />
+          </div>
+        </div>
+      </div>
+      <div class="singel-pro-details">
+        <h6>Home / Appliances</h6>
+        <h4>BLACK+DECKER Air Fryer - 4 Liter -1.2Kg Performance Range Aerofry- Af300</h4>
+        <h2>EGP 4,199.00</h2>
+        <input type="number" value="1" />
+        <button>Add To Cart</button>
+        <h4>Product Details</h4>
+        <span>
+          The Black+Decker AF300 Air Fryer is ideal for frying and roasting. Delicious food is finally guilt free,
+          thanks to the Black+Decker 4 liter AerOfry. It cuts down on the oil so that you can relish the mouthwatering,
+          crispy food without the added fat.Life span 2 years
+        </span>
+      </div>
+    </div>
+
+    <div class="delivery-returns">
+      <h3>DELIVERY & RETURNS</h3>
+      <hr />
+      <div>
+        <strong>Choose your location: </strong>
+        <div>
+          <br />
+          <label for="governorates">Governorates:</label>
+          <br />
+          <select id="governorates" name="governorates"></select>
+        </div>
+        <div>
+          <label for="cities">Cities:</label>
+          <br />
+          <select id="cities" name="cities"></select>
+        </div>
+      </div>
+
+      <div>
+        <br />
+        <br />
+        <strong>Door Delivery:</strong>
+        <p>Delivery Fees EGP 35.00.<br /> Ready for delivery between 30 July & 31 July when you order within next 9hrs 36mins</p>
+      </div>
+      <div>
+        <hr />
+        <strong>Return Policy:</strong>
+        <p>Free return within the legal return period from 14 to 30 days, and if they meet the terms & conditions, with the need to report any apparent defect within 48 hours.</p>
+        <hr />
+      </div>
+      <div>
+        <strong>Warranty:</strong>
+        <p>No warranty</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="top-selling-grid">
+    <div id="name-bar">
+      <div>Top selling items</div>
+      <div id="see-all">SEE ALL</div>
+    </div>
+    <div id="products">
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/03/330623/1.jpg?1723" alt="Darol Multipurpose Liquid Disinfectant">
+        <div class="discount">-20%</div>
+        <div class="product-info">
+          <p class="product-details">Darol Multipurpose Liquid Disinfectant</p>
+          <p class="product-price">EGP 39.00</p>
+          <p class="product-price-before">EGP 49.00</p>
+        </div>
+      </div>
+      <div class="product" onclick="window.location.href= 'product-detail.html'">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/20/690418/1.jpg?8931" alt="BLACK+DECKER Air Fryer">
+        <div class="discount">-51%</div>
+        <div class="product-info">
+          <p class="product-details">BLACK+DECKER Air Fryer - 4 Liter -1.2Kg Performance Range Aerofry- Af300</p>
+          <p class="product-price">EGP 4199.00</p>
+          <p class="product-price-before">EGP 8500.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/58/513084/1.jpg?6260" alt="XIAOMI Redmi 12">
+        <div class="discount">-31%</div>
+        <div class="product-info">
+          <p class="product-details">XIAOMI Redmi 12 - 6.79-Inch 12</p>
+          <p class="product-price">EGP 6899.00</p>
+          <p class="product-price-before">EGP 9999.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/389096/1.jpg?6458" alt="Beko BIHT1241+BIHT1240">
+        <div class="discount">-35%</div>
+        <div class="product-info">
+          <p class="product-details">Beko BIHT1241+BIHT1240 - 1</p>
+          <p class="product-price">EGP 29999.00</p>
+          <p class="product-price-before">EGP 45999.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/120903/1.jpg?9800" alt="Zanussi (DF40) 370L Crespo">
+        <div class="discount">-12%</div>
+        <div class="product-info">
+          <p class="product-details">Zanussi (DF40) 370L Crespo - Freezer</p>
+          <p class="product-price">EGP 22695.50</p>
+          <p class="product-price-before">EGP 25799.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/196625/1.jpg?4577" alt="ADIDAS RF082   Motion Linear Backpack- Black">
+        <div class="discount">-53%</div>
+        <div class="product-info">
+          <p class="product-details">ADIDAS RF082   Motion Linear Backpack- Black</p>
+          <p class="product-price">EGP 995.00</p>
+          <p class="product-price-before">EGP 2099.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/107952/1.jpg?0005" alt="Fresh Shabah Wall Fan With Remote - 18 Inch">
+        <div class="discount">-13%</div>
+        <div class="product-info">
+          <p class="product-details">Fresh Shabah Wall Fan With Remote - 18 Inch</p>
+          <p class="product-price">EGP 1733.00</p>
+          <p class="product-price-before">EGP 1990.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-section0">
+      <h3>About Us</h3>
+      <p>Information about the company.</p>
+    </div>
+    <div class="footer-section1">
+      <h3>Contact</h3>
+      <p>Email: contact@onlinemarket.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+    <div class="footer-section2">
+      <h3>Follow Us</h3>
+      <p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts/slider-product-img.js"></script>
+  <script src="scripts/locations.js"></script>
+
+</body>
+</html>

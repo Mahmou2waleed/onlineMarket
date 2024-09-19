@@ -1,0 +1,132 @@
+﻿#product-container {
+  display: flex;
+}
+
+#prodetails {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(to top, #ffffff, #f0f0f0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 22px;
+  padding-bottom: 30px;
+}
+
+  #prodetails .singel-pro-image {
+    width: 35%;
+    padding: 40px 10px 50px 40px;
+  }
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetails .singel-pro-details {
+  width: 50%;
+  padding-top: 20px;
+}
+
+  #prodetails .singel-pro-details h4 {
+    padding: 20px 0 15px 0;
+    margin-bottom: 0;
+    font-size: 21px;
+    line-height: 20px;
+  }
+
+  #prodetails .singel-pro-details h2 {
+    font-size: 26px;
+  }
+
+  #prodetails .singel-pro-details input {
+    width: 50px;
+    height: 30px;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+  #prodetails .singel-pro-details button {
+    height: 34px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 12px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: color, background-color 0.15s;
+  }
+
+    #prodetails .singel-pro-details button:hover {
+      color: white;
+      background-color: black;
+    }
+
+    #prodetails .singel-pro-details button:active {
+      opacity: 0.7;
+    }
+
+  #prodetails .singel-pro-details span {
+    line-height: 25px;
+    color: rgb(0, 0, 0, 0.83)
+  }
+
+.delivery-returns {
+  width: 20%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(to top, #ffffff, #f0f0f0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px 0 10px 20px;
+  padding: 10px 15px 30px 10px;
+}
+
+  .delivery-returns h3 {
+    margin: 0px;
+  }
+
+  .delivery-returns hr {
+    width: 100%;
+    opacity: 0.3;
+    border-width: 0.01px;
+  }
+
+  .delivery-returns select {
+    width: 130px;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding-left: 5px;
+    margin: 10px 10px 10px 0;
+  }
+
+  .delivery-returns p {
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(0, 0, 0, 0.83)
+  }
