@@ -1,4 +1,4 @@
-﻿body {
+body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: #f8f8f8;
@@ -154,6 +154,14 @@ a {
     border-radius: 50%;
     border: 2px solid black;
   }
+
+    #search-section:hover, #cart-section:hover {
+      background-color: black;
+    }
+
+      #search-section:hover img, #cart-section:hover img {
+        filter: invert(1);
+      }
 
   #search, #cart {
     display: none;
