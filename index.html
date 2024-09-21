@@ -2,8 +2,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>OnlineMarket</title>
+  <link rel="icon" href="picture\logo-white.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;
@@ -15,13 +16,13 @@
 </head>
 <body>
   <header id="header">
-    <div id="left-section">
-      <img id="nassan-logo" src="picture/logo-no-background.png" />
+    <div id="left-section" onclick="window.location.href= 'index.html'">
+      <img id="nassan-logo" href="index.html" src="picture/logo-no-background.png" />
     </div>
 
     <div id="middle-section">
       <div id="home">
-        <a id="active" href="OnlineMarket.html">Home</a>
+        <a id="active" href="index.html">Home</a>
       </div>
       <div id="Categories">
         <a href="#button-container">Categories</a>
@@ -118,91 +119,96 @@
       <div>Top selling items</div>
       <div id="see-all">SEE ALL</div>
     </div>
-    <div id="products">
-      <div class="product">
-        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/03/330623/1.jpg?1723" alt="Darol Multipurpose Liquid Disinfectant">
-        <div class="discount">-20%</div>
-        <div class="product-info">
-          <p class="product-details">Darol Multipurpose Liquid Disinfectant</p>
-          <p class="product-price">EGP 39.00</p>
-          <p class="product-price-before">EGP 49.00</p>
+    <div id="carousel-container">
+      <button id="left-button" class="carousel-button">&lt;</button>
+      <div id="products">
+        <div class="product">
+          <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/03/330623/1.jpg?1723" alt="Darol Multipurpose Liquid Disinfectant">
+          <div class="discount">-20%</div>
+          <div class="product-info">
+            <p class="product-details">Darol Multipurpose Liquid Disinfectant</p>
+            <p class="product-price">EGP 39.00</p>
+            <p class="product-price-before">EGP 49.00</p>
+          </div>
+        </div>
+        <div class="product" onclick="window.location.href= 'product-detail.html'">
+          <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/20/690418/1.jpg?8931" alt="BLACK+DECKER Air Fryer">
+          <div class="discount">-51%</div>
+          <div class="product-info">
+            <p class="product-details">BLACK+DECKER Air Fryer - 4 Liter -1.2Kg Performance Range Aerofry- Af300</p>
+            <p class="product-price">EGP 4199.00</p>
+            <p class="product-price-before">EGP 8500.00</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/58/513084/1.jpg?6260" alt="XIAOMI Redmi 12">
+          <div class="discount">-31%</div>
+          <div class="product-info">
+            <p class="product-details">XIAOMI Redmi 12 - 6.79-Inch 12</p>
+            <p class="product-price">EGP 6899.00</p>
+            <p class="product-price-before">EGP 9999.00</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/389096/1.jpg?6458" alt="Beko BIHT1241+BIHT1240">
+          <div class="discount">-35%</div>
+          <div class="product-info">
+            <p class="product-details">Beko BIHT1241+BIHT1240 - 1</p>
+            <p class="product-price">EGP 29999.00</p>
+            <p class="product-price-before">EGP 45999.00</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/120903/1.jpg?9800" alt="Zanussi (DF40) 370L Crespo">
+          <div class="discount">-12%</div>
+          <div class="product-info">
+            <p class="product-details">Zanussi (DF40) 370L Crespo - Freezer</p>
+            <p class="product-price">EGP 22695.50</p>
+            <p class="product-price-before">EGP 25799.00</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/196625/1.jpg?4577" alt="ADIDAS RF082 Motion Linear Backpack- Black">
+          <div class="discount">-53%</div>
+          <div class="product-info">
+            <p class="product-details">ADIDAS RF082 Motion Linear Backpack- Black</p>
+            <p class="product-price">EGP 995.00</p>
+            <p class="product-price-before">EGP 2099.00</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/107952/1.jpg?0005" alt="Fresh Shabah Wall Fan With Remote - 18 Inch">
+          <div class="discount">-13%</div>
+          <div class="product-info">
+            <p class="product-details">Fresh Shabah Wall Fan With Remote - 18 Inch</p>
+            <p class="product-price">EGP 1733.00</p>
+            <p class="product-price-before">EGP 1990.00</p>
+          </div>
         </div>
       </div>
-      <div class="product" onclick="window.location.href= 'product-detail.html'">
-        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/20/690418/1.jpg?8931" alt="BLACK+DECKER Air Fryer">
-        <div class="discount">-51%</div>
-        <div class="product-info">
-          <p class="product-details">BLACK+DECKER Air Fryer - 4 Liter -1.2Kg Performance Range Aerofry- Af300</p>
-          <p class="product-price">EGP 4199.00</p>
-          <p class="product-price-before">EGP 8500.00</p>
-        </div>
-      </div>
-      <div class="product">
-        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/58/513084/1.jpg?6260" alt="XIAOMI Redmi 12">
-        <div class="discount">-31%</div>
-        <div class="product-info">
-          <p class="product-details">XIAOMI Redmi 12 - 6.79-Inch 12</p>
-          <p class="product-price">EGP 6899.00</p>
-          <p class="product-price-before">EGP 9999.00</p>
-        </div>
-      </div>
-      <div class="product">
-        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/389096/1.jpg?6458" alt="Beko BIHT1241+BIHT1240">
-        <div class="discount">-35%</div>
-        <div class="product-info">
-          <p class="product-details">Beko BIHT1241+BIHT1240 - 1</p>
-          <p class="product-price">EGP 29999.00</p>
-          <p class="product-price-before">EGP 45999.00</p>
-        </div>
-      </div>
-      <div class="product">
-        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/120903/1.jpg?9800" alt="Zanussi (DF40) 370L Crespo">
-        <div class="discount">-12%</div>
-        <div class="product-info">
-          <p class="product-details">Zanussi (DF40) 370L Crespo - Freezer</p>
-          <p class="product-price">EGP 22695.50</p>
-          <p class="product-price-before">EGP 25799.00</p>
-        </div>
-      </div>
-      <div class="product">
-        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/196625/1.jpg?4577" alt="ADIDAS RF082   Motion Linear Backpack- Black">
-        <div class="discount">-53%</div>
-        <div class="product-info">
-          <p class="product-details">ADIDAS RF082   Motion Linear Backpack- Black</p>
-          <p class="product-price">EGP 995.00</p>
-          <p class="product-price-before">EGP 2099.00</p>
-        </div>
-      </div>
-      <div class="product">
-        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/107952/1.jpg?0005" alt="Fresh Shabah Wall Fan With Remote - 18 Inch">
-        <div class="discount">-13%</div>
-        <div class="product-info">
-          <p class="product-details">Fresh Shabah Wall Fan With Remote - 18 Inch</p>
-          <p class="product-price">EGP 1733.00</p>
-          <p class="product-price-before">EGP 1990.00</p>
-        </div>
-      </div>
+      <button id="right-button" class="carousel-button">&gt;</button>
     </div>
   </div>
 
+
   <footer id="footer">
-      <div class="footer-section0">
-        <h3>About Us</h3>
-        <p>Information about the company.</p>
-      </div>
-      <div class="footer-section1">
-        <h3>Contact</h3>
-        <p>Email: contact@onlinemarket.com</p>
-        <p>Phone: +123 456 7890</p>
-      </div>
-      <div class="footer-section2">
-        <h3>Follow Us</h3>
-        <p>
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-        </p>
-      </div>
+    <div class="footer-section0">
+      <h3>About Us</h3>
+      <p>Information about the company.</p>
+    </div>
+    <div class="footer-section1">
+      <h3>Contact</h3>
+      <p>Email: contact@onlinemarket.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+    <div class="footer-section2">
+      <h3>Follow Us</h3>
+      <p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </p>
+    </div>
   </footer>
 
   <script src="scripts/moving-slides.js"></script>
