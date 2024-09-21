@@ -25,3 +25,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setInterval(autoSlide, 3000);
 });
+
+
+
+//left and right buttons for navigating
+
+
+const products = document.getElementById('products');
+const leftButton = document.getElementById('left-button');
+const rightButton = document.getElementById('right-button');
+
+let scrollPosition = 0;
+
+leftButton.addEventListener('click', () => {
+  scrollPosition += 250;
+  if (scrollPosition > 0) {
+    scrollPosition = 0;
+  }
+  products.style.transform = `translateX(${scrollPosition}px)`;
+});
+
+rightButton.addEventListener('click', () => {
+  scrollPosition -= 250;
+  const maxScroll = -products.scrollWidth + products.clientWidth;
+  if (scrollPosition < maxScroll) {
+    scrollPosition = maxScroll;
+  }
+  products.style.transform = `translateX(${scrollPosition}px)`;
+});
