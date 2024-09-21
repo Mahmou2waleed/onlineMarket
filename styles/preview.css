@@ -1,8 +1,8 @@
 ﻿#banner {
   position: relative;
-  height: 700px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 60px 10px 10px 10px;
   margin-bottom: 10px;
   background: linear-gradient(to top, #ffffff, #f0f0f0);
@@ -12,9 +12,8 @@
 }
 
 #container {
-  position: relative;
-  width: 90%;
-  height: 45%;
+  width: 55%;
+  height: 30vw;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -60,8 +59,8 @@
   }
 
 #button-container {
-  position: absolute;
-  bottom: 10px;
+  max-width: 748px;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -80,6 +79,8 @@
   flex-direction: column;
   cursor: pointer;
   transition: transform 0.3s;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 .banner-button:hover {
@@ -87,6 +88,53 @@
 }
 
 .banner-button img {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
+}
+
+@media (max-width: 1024px) {
+  #container {
+    width: 62%;
+    height: 36vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    width: 70%;
+    height: 40vw;
+  }
+}
+
+@media (max-width: 460px) {
+  #container {
+    width: 90%;
+    height: 60vw;
+  }
+
+  .banner-button {
+    width: 85px;
+    height: 85px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+    .banner-button img {
+      width: 30px;
+      height: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+  .banner-button {
+    width: 80px;
+    height: 80px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+    .banner-button img {
+      width: 30px;
+      height: 30px;
+    }
 }
