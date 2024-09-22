@@ -9,11 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/top-selling.css" />
   <link rel="stylesheet" href="styles/cart.css" />
   <link rel="stylesheet" href="styles/footer.css" />
 </head>
 <body>
-  <header id="header" >
+  <header id="header">
     <div id="left-section" onclick="window.location.href= 'index.html'">
       <img id="nassan-logo" src="picture/logo-no-background.png" />
     </div>
@@ -29,49 +30,108 @@
         <div id="search">Search</div>
         <img id="search-icon" src="picture/search.svg" />
       </div>
-      <div id="cart-section" onclick="document.location='cart.html'">
-        <div id="cart">Cart</div>
-        <img id="cart-icon" src="picture/shopping-cart-svgrepo-com.svg" />
-      </div>
       <button id="signIn-button" onclick="document.location='sign-in.html'">Sign in</button>
     </div>
   </header>
 
   <div class="cart-container">
-    <h1>Your Cart</h1>
-    <div class="cart-items">
-      <div class="cart-item">
-        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/03/330623/1.jpg?1723" alt="Darol Multipurpose Liquid Disinfectant">
-        <div class="cart-item-info">
-          <p>Darol Multipurpose Liquid Disinfectant</p>
-          <p>Price: EGP 39.00</p>
-          <label for="quantity">Quantity: </label>
-          <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <div class="canYouLike">
+      <p>You Can Like</p>
+      <div id="carousel-container">
+        <button id="left-button" class="carousel-button">&lt;</button>
+        <div id="products">
+          <div class="product">
+            <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/58/513084/1.jpg?6260" alt="XIAOMI Redmi 12">
+            <div class="discount">-31%</div>
+            <div class="product-info">
+              <p class="product-details">XIAOMI Redmi 12 - 6.79-Inch 12</p>
+              <p class="product-price">EGP 6899.00</p>
+              <p class="product-price-before">EGP 9999.00</p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/389096/1.jpg?6458" alt="Beko BIHT1241+BIHT1240">
+            <div class="discount">-35%</div>
+            <div class="product-info">
+              <p class="product-details">Beko BIHT1241+BIHT1240 - 1</p>
+              <p class="product-price">EGP 29999.00</p>
+              <p class="product-price-before">EGP 45999.00</p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/120903/1.jpg?9800" alt="Zanussi (DF40) 370L Crespo">
+            <div class="discount">-12%</div>
+            <div class="product-info">
+              <p class="product-details">Zanussi (DF40) 370L Crespo - Freezer</p>
+              <p class="product-price">EGP 22695.50</p>
+              <p class="product-price-before">EGP 25799.00</p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/196625/1.jpg?4577" alt="ADIDAS RF082 Motion Linear Backpack- Black">
+            <div class="discount">-53%</div>
+            <div class="product-info">
+              <p class="product-details">ADIDAS RF082 Motion Linear Backpack- Black</p>
+              <p class="product-price">EGP 995.00</p>
+              <p class="product-price-before">EGP 2099.00</p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/107952/1.jpg?0005" alt="Fresh Shabah Wall Fan With Remote - 18 Inch">
+            <div class="discount">-13%</div>
+            <div class="product-info">
+              <p class="product-details">Fresh Shabah Wall Fan With Remote - 18 Inch</p>
+              <p class="product-price">EGP 1733.00</p>
+              <p class="product-price-before">EGP 1990.00</p>
+            </div>
+          </div>
         </div>
-        <div class="cart-item-remove">
-          <button>Remove</button>
-        </div>
-      </div>
-
-      <div class="cart-item">
-        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/20/690418/1.jpg?8931" alt="BLACK+DECKER Air Fryer">
-        <div class="cart-item-info">
-          <p>BLACK+DECKER Air Fryer</p>
-          <p>Price: EGP 4199.00</p>
-          <label for="quantity">Quantity: </label>
-          <input type="number" id="quantity" name="quantity" min="1" value="1">
-        </div>
-        <div class="cart-item-remove">
-          <button>Remove</button>
-        </div>
+        <button id="right-button" class="carousel-button">&gt;</button>
       </div>
     </div>
 
-    <div class="cart-summary">
-      <p>Total: EGP </p>
-      <button id="checkout-button">Proceed to Checkout</button>
+    <div class="yourCart">
+      <div class="cart-items">
+        <h1>Your Cart</h1>
+        <div class="cart-item">
+          <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/03/330623/1.jpg?1723" alt="Darol Multipurpose Liquid Disinfectant">
+          <div class="cart-item-info">
+            <p>Darol Multipurpose Liquid Disinfectant</p>
+            <p>Price: EGP 39.00</p>
+            <div>
+              <label for="quantity">Quantity: </label>
+              <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+          </div>
+          <div class="cart-item-remove">
+            <button>Remove</button>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/20/690418/1.jpg?8931" alt="BLACK+DECKER Air Fryer">
+          <div class="cart-item-info">
+            <p>BLACK+DECKER Air Fryer</p>
+            <p>Price: EGP 4199.00</p>
+            <div>
+              <label for="quantity">Quantity: </label>
+              <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+          </div>
+          <div class="cart-item-remove">
+            <button>Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-summary">
+        <p>Total: EGP </p>
+        <button id="checkout-button">Proceed to Checkout</button>
+      </div>
     </div>
+    <img class="rightBan" src="https://marketplace.canva.com/EAGEfV24h-A/1/0/900w/canva-%D9%82%D8%B5%D8%A9-instagram-%D8%A8%D9%86%D9%81%D8%B3%D8%AC%D9%8A-%D9%88-%D8%A7%D8%B5%D9%81%D8%B1-%D8%AD%D8%AF%D9%8A%D8%AB-%D8%AA%D8%AE%D9%81%D9%8A%D8%B6%D8%A7%D8%AA-pHI8sxjp7Uc.jpg" />
   </div>
+
 
   <footer id="footer">
     <div class="footer-section0">
@@ -94,5 +154,6 @@
   </footer>
 
   <script src="scripts/cart.js"></script>
+  <script src="scripts/moving-slides.js"></script>
 </body>
 </html>
