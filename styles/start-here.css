@@ -12,7 +12,7 @@
 }
 
 #register {
-  padding: 50px 100px 100px 100px;
+  padding: 50px 100px 70px 100px;
   background-color: rgb(230, 230, 230);
   width: 70%;
   max-width: 400px;
@@ -93,3 +93,24 @@
     .terms a:hover {
       text-decoration: underline;
     }
+
+.signIcon{
+  width: 40px;
+  margin: 30px 30px 0 30px;
+}
+
+@media (max-width: 500px) {
+  #register {
+    padding: 25px 50px 50px 50px;
+    width: 210px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  #register {
+    padding: 25px 40px 50px 35px;
+    width: 210px;
+    font-size: 14px;
+  }
+}

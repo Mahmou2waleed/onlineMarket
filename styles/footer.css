@@ -10,12 +10,11 @@
   align-items: flex-start;
   background: rgb(49, 49, 51);
   color: rgb(241, 241, 242);
-  border-radius: 10px;
-  background: linear-gradient(to top, rgba(49 ,49, 51), rgb(85, 93, 93));
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: linear-gradient(to top, rgba(49,49, 51), rgb(85, 93, 93));
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .footer-section {
   margin: 20px;

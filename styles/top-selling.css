@@ -1,4 +1,5 @@
 ﻿#top-selling-grid {
+  position: relative;
   margin: 10px auto;
   border-radius: 10px;
   background: linear-gradient(to top, #ffffff, #f0f0f0);
@@ -25,17 +26,21 @@
 }
 
 #carousel-container {
-  position: relative;
-  overflow: hidden;
+  overflow: auto;
   width: 90%;
   margin: 0 auto;
 }
+
+  #carousel-container::-webkit-scrollbar {
+    display: none;
+  }
 
 #products {
   display: flex;
   transition: transform 0.5s ease;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .product {
@@ -125,3 +130,4 @@
   right: 10px;
   z-index: 1;
 }
+
