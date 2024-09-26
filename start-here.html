@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <link rel="icon" href="picture/logo-white.png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - OnlineMarket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/start-here.css" />
+</head>
+
+<body>
+  <div id="icon">
+    <img id="nassan-logo" onclick="window.location.href= 'index.html'" src="picture/logo-no-background.png" />
+  </div>
+  <div id="register">
+    <div id="register-title">Create account</div>
+
+    <form id="register-form" class="form">
+      <div class="input-group">
+        <label for="input-name">Your name</label>
+        <input id="input-name" class="fullName" name="fullName" type="text" placeholder="Enter your name" />
+        <div class="error" id="name-error"></div>
+      </div>
+      <div class="input-group">
+        <label for="input-phone">Phone No.</label>
+        <input id="input-phone" class="phone" name="phone" type="tel" placeholder="Enter phone number" />
+        <div class="error" id="phone-error"></div>
+      </div>
+      <div class="input-group">
+        <label for="input-email">Email</label>
+        <input id="input-email" class="email" name="email" type="email" placeholder="Enter Email" />
+        <div class="error" id="email-error"></div>
+      </div>
+      <div class="input-group">
+        <label for="input-password">Password</label>
+        <input id="input-password" class="password" name="password" type="password" placeholder="Enter password" />
+        <div class="error" id="password-error"></div>
+      </div>
+      <div class="input-group">
+        <label for="input-confirm-password">Re-enter password</label>
+        <input id="input-confirm-password" class="confirmPassword" type="password" placeholder="Re-enter password" />
+        <div class="error" id="confirm-password-error"></div>
+      </div>
+      <button type="submit" id="register-button">Continue</button>
+    </form>
+
+    <div class="loadImgCon"><img class="imgst"
+        src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif" /></div>
+    <div id="submitError"></div>
+
+    <div class="terms">
+      By creating an account, you agree to OnlineMarket's
+      <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.
+    </div>
+
+    <div class="signWith">
+      <img class="signIcon" src="https://cdn-icons-png.flaticon.com/512/281/281764.png" />
+      <img class="signIcon" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" />
+    </div>
+  </div>
+
+  <script src="scripts/register.js"></script>
+
+</body>
+
+</html>
