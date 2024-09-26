@@ -1,0 +1,140 @@
+﻿#banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 10px 10px 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(to top, #ffffff, #f0f0f0);
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#container {
+  width: 55%;
+  height: 30vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#slide-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+  #slider img {
+    flex: 1 0 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: fill;
+  }
+
+#slider-nav {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+  #slider-nav a {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.79);
+    cursor: pointer;
+  }
+
+#button-container {
+  max-width: 748px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.banner-button {
+  width: 100px;
+  height: 100px;
+  background: none;
+  border-radius: 50px;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.banner-button:hover {
+  transform: scale(1.1);
+}
+
+.banner-button img {
+  width: 38px;
+  height: 38px;
+}
+
+@media (max-width: 1024px) {
+  #container {
+    width: 62%;
+    height: 36vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    width: 70%;
+    height: 40vw;
+  }
+}
+
+@media (max-width: 460px) {
+  #container {
+    width: 90%;
+    height: 60vw;
+  }
+
+  .banner-button {
+    width: 85px;
+    height: 85px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+    .banner-button img {
+      width: 30px;
+      height: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+  .banner-button {
+    width: 80px;
+    height: 80px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+    .banner-button img {
+      width: 30px;
+      height: 30px;
+    }
+}
